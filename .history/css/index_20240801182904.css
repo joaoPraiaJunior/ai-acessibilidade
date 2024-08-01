@@ -340,10 +340,6 @@ span.material-symbols-outlined {
 }
 
 .footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 450px;
     background: var(--preto);
     width: 100%;
     padding: 40px 0;

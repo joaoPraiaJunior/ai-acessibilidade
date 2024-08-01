@@ -34,22 +34,7 @@
 }
 
 .c-banner__titulo {
-    color: var(--grafite);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-align: center;
-    margin: 110px auto 64px auto;
-}
-
-.c-banner__titulo::after {
-    content: '';
-    display: block;
-    background: var(--vermelho);
-    width: 180px;
-    height: 4px;
-    margin: 16px auto 0 auto;
+    margin-top: 110px auto 64px auto;
 }
 
 .c-banner__descricao {
@@ -72,10 +57,10 @@
     margin-bottom: 112px;
 }
 
-.c-depoimentos__titulo,
-.c-pagamento__titulo,
-.c-destinos__titulo,
-.c-busca__titulo,
+.depoimentos__titulo,
+.pagamento__titulo,
+.destinos__titulo,
+.busca__titulo,
 .c-ofertas__titulo {
     color: var(--grafite);
     font-size: 32px;
@@ -86,10 +71,10 @@
     margin-bottom: 64px;
 }
 
-.c-depoimentos__titulo--sublinhado,
-.c-pagamento__titulo--sublinhado,
-.c-destinos__titulo--sublinhado,
-.c-busca__titulo--sublinhado,
+.depoimentos__titulo--sublinhado,
+.pagamento__titulo--sublinhado,
+.destinos__titulo--sublinhado,
+.busca__titulo--sublinhado,
 .c-ofertas__titulo--sublinhado {
     width: 180px;
     height: 4px;
@@ -168,7 +153,7 @@ img {
     margin-bottom: 24px;
 }
 
-.c-destinos__item--botao,
+.destinos__item--botao,
 .c-ofertas__card--botao {
     border-radius: 8px;
     background: var(--vermelho, #B81515);
@@ -177,7 +162,7 @@ img {
     display: inline-block;
 }
 
-.c-destinos__item--botao-texto,
+.destinos__item--botao-texto,
 .c-ofertas__card--botao-texto {
     font-size: 20px;
     font-style: normal;
@@ -186,14 +171,14 @@ img {
     color: var(--branco, #FFF);
 }
 
-.c-busca__categorias {
+.busca__categorias {
     display: flex;
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
 }
 
-.c-busca__categoria {
+.busca__categoria {
     color: var(--grafite, #222);
     text-align: center;
     font-size: 28px;
@@ -217,25 +202,25 @@ span.material-symbols-outlined {
     line-height: normal;
 }
 
-.c-destinos__lista {
+.destinos__lista {
     display: flex;
     align-items: stretch;
     gap: 24px;
     margin-bottom: 112px;
 }
 
-.c-destinos__item {
+.destinos__item {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.c-destinos__item--image {
+.destinos__item--image {
     max-width: 100%;
 }
 
-.c-destinos__item--nome {
+.destinos__item--nome {
     color: var(--grafite, #222);
     font-size: 28px;
     font-style: normal;
@@ -244,7 +229,7 @@ span.material-symbols-outlined {
     margin: 24px 0;
 }
 
-.c-destinos__item--descricao {
+.destinos__item--descricao {
     color: var(--grafite, #222);
     font-size: 20px;
     font-style: normal;
@@ -253,17 +238,17 @@ span.material-symbols-outlined {
     margin-bottom: 24px;
 }
 
-.c-pagamento {
+.pagamento {
     margin-bottom: 112px;
 }
 
-.c-pagamento__imagens--grupo,
-.c-pagamento__condicoes {
+.pagamento__imagens--grupo,
+.pagamento__condicoes {
     display: flex;
     gap: 24px;
 }
 
-.c-pagamento__condicoes--destaque {
+.pagamento__condicoes--destaque {
     color: var(--grafite, #222);
     font-size: 28px;
     font-style: normal;
@@ -272,7 +257,7 @@ span.material-symbols-outlined {
     margin-bottom: 24px;
 }
 
-.c-pagamento__condicoes--detalhes {
+.pagamento__condicoes--detalhes {
     color: var(--grafite, #222);
     font-size: 20px;
     font-style: normal;
@@ -282,36 +267,36 @@ span.material-symbols-outlined {
     max-width: 100%;
 }
 
-.c-pagamento__imagens--imagem-container {
+.pagamento__imagens--imagem-container {
     flex: 1;
 }
 
-.c-pagamento__imagens--imagem-destaque {
+.pagamento__imagens--imagem-destaque {
     margin-top: 20px;
 }
 
-.c-pagamento__imagens--imagem {
+.pagamento__imagens--imagem {
     max-width: 100%;
 }
 
-.c-depoimentos {
+.depoimentos {
     margin-bottom: 112px;
 }
 
-.c-depoimentos__wrapper {
+.depoimentos__wrapper {
     display: flex;
     gap: 24px;
     align-items: stretch;
 }
 
-.c-depoimentos__item {
+.depoimentos__item {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.c-depoimentos__texto {
+.depoimentos__texto {
     color: var(--grafite, #222);
     font-size: 16px;
     font-style: normal;
@@ -319,17 +304,17 @@ span.material-symbols-outlined {
     line-height: 28px;
 }
 
-.c-depoimentos__autor {
+.depoimentos__autor {
     margin-top: 12px;
     display: flex;
     gap: 24px;
 }
 
-.c-depoimentos__autor--foto {
+.depoimentos__autor--foto {
     max-width: 86px;
 }
 
-.c-depoimentos__autor--nome {
+.depoimentos__autor--nome {
     color: var(--grafite, #222);
     text-align: center;
     font-size: 20px;
@@ -340,10 +325,6 @@ span.material-symbols-outlined {
 }
 
 .footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 450px;
     background: var(--preto);
     width: 100%;
     padding: 40px 0;
@@ -351,9 +332,11 @@ span.material-symbols-outlined {
 }
 
 .footer {
+    justify-content: space-between;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     color: var(--branco, #FFF);
 }
 
