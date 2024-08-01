@@ -340,10 +340,6 @@ span.material-symbols-outlined {
 }
 
 .footer__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 450px;
     background: var(--preto);
     width: 100%;
     padding: 40px 0;
@@ -352,10 +348,13 @@ span.material-symbols-outlined {
 
 .footer {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     color: var(--branco, #FFF);
 }
+
+
 
 .footer__logo-icon {
     max-width: 160px;
